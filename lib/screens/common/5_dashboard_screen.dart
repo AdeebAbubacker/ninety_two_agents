@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/4_signup_as_buyer.dart';
-import 'package:ninetytwoagents/screens/6_agent_details_screen.dart';
+import 'package:ninetytwoagents/screens/common/4_signup_as_buyer.dart';
+import 'package:ninetytwoagents/screens/common/6_agent_details_screen.dart';
 import 'package:ninetytwoagents/widgets/drawer_button.dart';
 
 class DashboardScreen extends StatefulWidget {

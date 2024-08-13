@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/1_splash_screen.dart';
-import 'package:ninetytwoagents/screens/10_agents_post_listing_screen.dart';
+import 'package:ninetytwoagents/screens/common/1_splash_screen.dart';
+import 'package:ninetytwoagents/screens/common/10_agents_post_listing_screen.dart';
 
 class AgentPostingScreen extends StatefulWidget {
   const AgentPostingScreen({super.key});

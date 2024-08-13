@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/11_agent_posting_screen.dart';
-import 'package:ninetytwoagents/screens/9_change_password_screen.dart';
+import 'package:ninetytwoagents/screens/common/11_agent_posting_screen.dart';
+import 'package:ninetytwoagents/screens/common/9_change_password_screen.dart';
 
 
 class AgentsPostListingScreen extends StatelessWidget {

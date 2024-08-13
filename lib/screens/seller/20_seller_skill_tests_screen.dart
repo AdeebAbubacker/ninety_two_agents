@@ -3,14 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
 
-class SkillTestsScreen extends StatefulWidget {
-  const SkillTestsScreen({super.key});
+class SellerSkillTestsScreen extends StatefulWidget {
+  const SellerSkillTestsScreen({super.key});
 
   @override
-  State<SkillTestsScreen> createState() => _SkillTestsScreenState();
+  State<SellerSkillTestsScreen> createState() => _SellerSkillTestsScreenState();
 }
 
-class _SkillTestsScreenState extends State<SkillTestsScreen> {
+class _SellerSkillTestsScreenState extends State<SellerSkillTestsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +36,6 @@ class _SkillTestsScreenState extends State<SkillTestsScreen> {
           ),
         ],
       ),
-      //--------------------------------------------------
       body: SafeArea(
         child: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
@@ -73,6 +72,7 @@ class _SkillTestsScreenState extends State<SkillTestsScreen> {
                   controller: TextEditingController(),
                   maxLines: 7,
                 ),
+                const SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
@@ -91,7 +91,7 @@ class _SkillTestsScreenState extends State<SkillTestsScreen> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 28),
+                const SizedBox(height: 10),
                 Text(
                   '2. Question Placeholder',
                   style: TextStyles.roboto16,
@@ -116,7 +116,26 @@ class _SkillTestsScreenState extends State<SkillTestsScreen> {
                   controller: TextEditingController(),
                   maxLines: 7,
                 ),
-                const SizedBox(height: 28),
+                const SizedBox(height: 10),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ButtonStyle(
+                        backgroundColor: WidgetStateProperty.all(Colors.white),
+                        side: WidgetStateProperty.all(const BorderSide(
+                            color: Color.fromARGB(255, 210, 209, 209),
+                            width: 1.0)),
+                      ),
+                      child: Text(
+                        'Save',
+                        style: TextStyles.roboto14Color20,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
                 Text(
                   '3. Question Placeholder',
                   style: TextStyles.roboto16,
@@ -141,6 +160,26 @@ class _SkillTestsScreenState extends State<SkillTestsScreen> {
                   controller: TextEditingController(),
                   maxLines: 7,
                 ),
+                const SizedBox(height: 10),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ButtonStyle(
+                        backgroundColor: WidgetStateProperty.all(Colors.white),
+                        side: WidgetStateProperty.all(const BorderSide(
+                            color: Color.fromARGB(255, 210, 209, 209),
+                            width: 1.0)),
+                      ),
+                      child: Text(
+                        'Save',
+                        style: TextStyles.roboto14Color20,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
               ],
             ),
           ),

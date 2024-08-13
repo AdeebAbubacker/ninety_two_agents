@@ -2,18 +2,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/10_agents_post_listing_screen.dart';
-import 'package:ninetytwoagents/screens/8_security_settings_screen.dart';
+import 'package:ninetytwoagents/screens/common/10_agents_post_listing_screen.dart';
+import 'package:ninetytwoagents/screens/common/8_security_settings_screen.dart';
 import 'package:ninetytwoagents/widgets/custom_textformfield.dart';
 
-class ChangePasswordScreen extends StatefulWidget {
-  const ChangePasswordScreen({super.key});
+class SellerChangePasswordScreen extends StatefulWidget {
+  const SellerChangePasswordScreen({super.key});
 
   @override
-  State<ChangePasswordScreen> createState() => _ChangePasswordScreenState();
+  State<SellerChangePasswordScreen> createState() => _SellerChangePasswordScreenState();
 }
 
-class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
+class _SellerChangePasswordScreenState extends State<SellerChangePasswordScreen> {
   final _detailsController = TextEditingController();
   final _postController = TextEditingController();
   final _notesController = TextEditingController();

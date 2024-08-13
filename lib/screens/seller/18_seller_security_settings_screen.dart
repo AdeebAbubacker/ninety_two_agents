@@ -2,12 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/7_profile_settings_screen.dart';
-import 'package:ninetytwoagents/screens/9_change_password_screen.dart';
+import 'package:ninetytwoagents/screens/common/7_profile_settings_screen.dart';
+import 'package:ninetytwoagents/screens/common/9_change_password_screen.dart';
 import 'package:ninetytwoagents/widgets/custom_textformfield.dart';
 
-class SecuritySettingsScreen extends StatelessWidget {
-  const SecuritySettingsScreen({super.key});
+class SellerSecuritySettingsScreen extends StatelessWidget {
+  const SellerSecuritySettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

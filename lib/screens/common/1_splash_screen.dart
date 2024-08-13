@@ -1,8 +1,8 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:ninetytwoagents/screens/11_agent_posting_screen.dart';
-import 'package:ninetytwoagents/screens/2_signin_screen.dart';
+import 'package:ninetytwoagents/screens/common/11_agent_posting_screen.dart';
+import 'package:ninetytwoagents/screens/common/2_signin_screen.dart';
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 

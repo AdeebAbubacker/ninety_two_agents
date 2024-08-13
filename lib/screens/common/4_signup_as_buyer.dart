@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/3_role_screen.dart';
-import 'package:ninetytwoagents/screens/5_dashboard_screen.dart';
+import 'package:ninetytwoagents/screens/common/3_role_screen.dart';
+import 'package:ninetytwoagents/screens/common/5_dashboard_screen.dart';
 
 final _fromKey = GlobalKey<FormState>();
 
