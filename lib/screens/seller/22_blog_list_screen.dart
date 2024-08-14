@@ -173,8 +173,8 @@ class MyRadio extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 4),
       child: Container(
-        width: 23,
-        height: 23,
+        width: 18,
+        height: 18,
         decoration: const BoxDecoration(
           shape: BoxShape.circle,
           color: Color(0XFF74C52C),

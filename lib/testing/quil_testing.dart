@@ -40,110 +40,105 @@ class _QuilFormState extends State<QuilForm> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(
-                    color: Colors.grey,
-                    width: 1.3,
-                  ),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(
+                color: Colors.grey,
+                width: 1.3,
+              ),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Wrap(
                   children: [
-                    Wrap(
-                      children: [
-                        DropdownButton<double>(
-                          value: _selectedFontSize,
-                          items: _fontSizes.map((size) {
-                            return DropdownMenuItem<double>(
-                              value: size,
-                              child: Text('$size'),
-                            );
-                          }).toList(),
-                          onChanged: _setFontSize,
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.format_bold),
-                          onPressed: () {
-                            _controller.formatSelection(quill.Attribute.bold);
-                          },
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.format_italic),
-                          onPressed: () {
-                            _controller.formatSelection(quill.Attribute.h1);
-                          },
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.format_underlined),
-                          onPressed: () {
-                            _controller
-                                .formatSelection(quill.Attribute.underline);
-                          },
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.format_align_left),
-                          onPressed: () {
-                            _controller
-                                .formatSelection(quill.Attribute.leftAlignment);
-                          },
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.format_align_center),
-                          onPressed: () {
-                            _controller.formatSelection(
-                                quill.Attribute.centerAlignment);
-                          },
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.format_align_right),
-                          onPressed: () {
-                            _controller.formatSelection(
-                                quill.Attribute.rightAlignment);
-                          },
-                        ),
-                      ],
+                    DropdownButton<double>(
+                      value: _selectedFontSize,
+                      items: _fontSizes.map((size) {
+                        return DropdownMenuItem<double>(
+                          value: size,
+                          child: Text('$size'),
+                        );
+                      }).toList(),
+                      onChanged: _setFontSize,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 12, vertical: 10),
-                      child: Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: 1.4,
-                        color: Colors.grey,
-                      ),
+                    IconButton(
+                      icon: const Icon(Icons.format_bold),
+                      onPressed: () {
+                        _controller.formatSelection(quill.Attribute.bold);
+                      },
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 14),
-                      child: SizedBox(
-                        width: MediaQuery.of(context).size.width,
-                        height: 400,
-                        child: quill.QuillEditor(
-                          controller: _controller,
-                          // readOnly: false,
-                          // autoFocus: true,
-                          // expands: true,
-                          // padding: EdgeInsets.all(8),
-                          // scrollable: true,
-                          scrollController: ScrollController(),
-                          focusNode: FocusNode(),
-                        ),
-                      ),
+                    IconButton(
+                      icon: const Icon(Icons.format_italic),
+                      onPressed: () {
+                        _controller.formatSelection(quill.Attribute.h1);
+                      },
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.format_underlined),
+                      onPressed: () {
+                        _controller.formatSelection(quill.Attribute.underline);
+                      },
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.format_align_left),
+                      onPressed: () {
+                        _controller
+                            .formatSelection(quill.Attribute.leftAlignment);
+                      },
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.format_align_center),
+                      onPressed: () {
+                        _controller
+                            .formatSelection(quill.Attribute.centerAlignment);
+                      },
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.format_align_right),
+                      onPressed: () {
+                        _controller
+                            .formatSelection(quill.Attribute.rightAlignment);
+                      },
                     ),
                   ],
                 ),
-              ),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 1.4,
+                    color: Colors.grey,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 14),
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width,
+                    height: 400,
+                    child: quill.QuillEditor(
+                      controller: _controller,
+                      // readOnly: false,
+                      // autoFocus: true,
+                      // expands: true,
+                      // padding: EdgeInsets.all(8),
+                      // scrollable: true,
+                      scrollController: ScrollController(),
+                      focusNode: FocusNode(),
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ],
+          ),
         ),
-      ),
+      ],
     );
   }
 }

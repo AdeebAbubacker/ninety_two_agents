@@ -73,8 +73,8 @@ class _SignupAsBuyerScreenState extends State<SignupAsBuyerScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          leading:
-              IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_back_ios)),
+          leading: IconButton(
+              onPressed: () {}, icon: const Icon(Icons.arrow_back_ios)),
           title: Text('Buyer',
               style: GoogleFonts.roboto(
                 textStyle: const TextStyle(
@@ -201,16 +201,13 @@ class CustomTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-      child: TextFormField(
-        focusNode: focusNode,
-        controller: textController,
-        decoration: InputDecoration(
-            hintText: "Input",
-            labelText: labelText,
-            border: const OutlineInputBorder()),
-      ),
+    return TextFormField(
+      focusNode: focusNode,
+      controller: textController,
+      decoration: InputDecoration(
+          hintText: "Input",
+          labelText: labelText,
+          border: const OutlineInputBorder()),
     );
   }
 }

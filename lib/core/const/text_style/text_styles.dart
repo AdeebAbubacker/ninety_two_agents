@@ -9,6 +9,10 @@ class TextStyles {
   static TextStyle roboto16 = GoogleFonts.roboto(
     fontSize: 16,
   );
+    static TextStyle roboto16Color00 = GoogleFonts.roboto(
+    fontSize: 16,
+    color: const Color(0XFF000000)
+  );
   static TextStyle roboto16Color66 =
       GoogleFonts.roboto(fontSize: 16, color: const Color(0XFF666666));
   static TextStyle roboto12 = GoogleFonts.roboto(
@@ -24,4 +28,8 @@ class TextStyles {
     fontSize: 14,
     color: const Color(0XFF42A120),
   );
+  static TextStyle roboto14ColorBlackgrey = GoogleFonts.roboto(
+      fontSize: 14,
+      color: const Color.fromARGB(255, 39, 39, 39),
+      fontWeight: FontWeight.w600);
 }
