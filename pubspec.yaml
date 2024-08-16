@@ -15,6 +15,15 @@ dependencies:
   svg_flutter: ^0.0.1
   flutter_quill: ^10.1.8
   flutter_launcher_icons: ^0.13.1
+  step_progress_indicator: ^1.0.2
+  hexcolor: ^3.0.1
+  horizontal_stepper_flutter: ^1.0.3
+  easy_stepper: ^0.8.5+1
+  flutter_bloc: ^8.1.6
+  flutter_quill_extensions: ^10.2.0
+  hydrated_bloc: ^9.1.5
+  desktop_drop: ^0.4.4
+  image_cropper: ^8.0.2
 
 dev_dependencies:
   flutter_test:
