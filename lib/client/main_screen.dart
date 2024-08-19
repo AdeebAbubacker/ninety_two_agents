@@ -17,7 +17,7 @@ import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_2%20seller_po
 import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_3%20agent_details_screen.dart';
 import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_6%20seller_profile_settings_screen.dart';
 import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_8%20seller_security_settings_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_9%20seller_change_password_screen%20copy.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_9%20seller_change_password_screen.dart';
 import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_10%20seller_skill_tests_screen.dart';
 import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_11%20mybookmarks_screen.dart';
 import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_16%20sellers_inbox.dart';
