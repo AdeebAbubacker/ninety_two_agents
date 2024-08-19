@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
+import 'package:ninetytwoagents/screens/section%201/1_12%20personal_bio_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_4%20signup_as_buyer.dart';
+import 'package:ninetytwoagents/screens/section%201/1_7%20create%20post.dart';
 import 'package:ninetytwoagents/screens/section%202/2_1_agents_post_listing_screen.dart';
 import 'package:ninetytwoagents/screens/section%202/2_2_agent_posting_screen.dart';
 import 'package:ninetytwoagents/screens/section%203/3_1_skill_tests_screen.dart';
@@ -91,11 +94,37 @@ class MainScreen extends StatelessWidget {
                   voidCallback: () {
                     Navigator.push(context, MaterialPageRoute(
                       builder: (context) {
+                        return const CreatePostScreen();
+                      },
+                    ));
+                  },
+                  text: 'Signup as Buyer Screen',
+                ),
+                const SizedBox(
+                  height: 14,
+                ),
+                DemoButton(
+                  voidCallback: () {
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) {
                         return const DashboardScreen();
                       },
                     ));
                   },
                   text: 'Dashboard Screen',
+                ),
+                const SizedBox(
+                  height: 14,
+                ),
+                DemoButton(
+                  voidCallback: () {
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) {
+                        return const CreatePostScreen();
+                      },
+                    ));
+                  },
+                  text: 'Create Post Screen',
                 ),
                 const SizedBox(
                   height: 14,
@@ -148,6 +177,19 @@ class MainScreen extends StatelessWidget {
                     ));
                   },
                   text: 'ChangePassword Screen',
+                ),
+                const SizedBox(
+                  height: 14,
+                ),
+                DemoButton(
+                  voidCallback: () {
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) {
+                        return const PersonalBioScreen();
+                      },
+                    ));
+                  },
+                  text: 'PersonalBio Screen',
                 ),
                 const SizedBox(
                   height: 14,

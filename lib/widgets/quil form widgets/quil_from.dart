@@ -51,42 +51,39 @@ class _QuilFromState extends State<QuilFrom> {
     _controller.readOnly = _isReadOnly;
     return Column(
       children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            height: _lineCount > 10 ? null : 400,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.black,
-                width: 1.0,
+        Container(
+          height: _lineCount > 10 ? null : 400,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: Colors.black,
+              width: 1.0,
+            ),
+            borderRadius: BorderRadius.circular(4),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              MyQuillToolbar(
+                controller: _controller,
+                focusNode: _editorFocusNode,
               ),
-              borderRadius: BorderRadius.circular(4),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                MyQuillToolbar(
-                  controller: _controller,
-                  focusNode: _editorFocusNode,
-                ),
-                Builder(
-                  builder: (context) {
-                    return MyQuillEditor(
-                      controller: _controller,
-                      configurations: QuillEditorConfigurations(
-                        searchConfigurations: const QuillSearchConfigurations(
-                          searchEmbedMode: SearchEmbedMode.plainText,
-                        ),
-                        sharedConfigurations: _sharedConfigurations,
+              Builder(
+                builder: (context) {
+                  return MyQuillEditor(
+                    controller: _controller,
+                    configurations: QuillEditorConfigurations(
+                      searchConfigurations: const QuillSearchConfigurations(
+                        searchEmbedMode: SearchEmbedMode.plainText,
                       ),
-                      scrollController: _editorScrollController,
-                      focusNode: _editorFocusNode,
-                    );
-                  },
-                ),
-              ],
-            ),
+                      sharedConfigurations: _sharedConfigurations,
+                    ),
+                    scrollController: _editorScrollController,
+                    focusNode: _editorFocusNode,
+                  );
+                },
+              ),
+            ],
           ),
         ),
       ],
