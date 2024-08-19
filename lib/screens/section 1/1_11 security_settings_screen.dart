@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/section%201/7_profile_settings_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/9_change_password_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_10%20profile_settings_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_13%20change_password_screen.dart';
 import 'package:ninetytwoagents/widgets/custom_textformfield.dart';
 
 class SecuritySettingsScreen extends StatelessWidget {

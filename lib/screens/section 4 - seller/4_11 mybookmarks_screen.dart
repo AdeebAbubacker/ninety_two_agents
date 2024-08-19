@@ -2,17 +2,17 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/14_seller_dashboard_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/16_agent_details_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_10%20seller_skill_tests_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_12%20blog_list_screen.dart';
 
-class SellerPostsScreen extends StatefulWidget {
-  const SellerPostsScreen({super.key});
+class SellerBookMarksScreen extends StatefulWidget {
+  const SellerBookMarksScreen({super.key});
 
   @override
-  State<SellerPostsScreen> createState() => _SellerPostsScreenState();
+  State<SellerBookMarksScreen> createState() => _SellerBookMarksScreenState();
 }
 
-class _SellerPostsScreenState extends State<SellerPostsScreen> {
+class _SellerBookMarksScreenState extends State<SellerBookMarksScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,7 @@ class _SellerPostsScreenState extends State<SellerPostsScreen> {
           icon: const Icon(Icons.menu),
         ),
         title: Text(
-          'My Posts',
+          'My Bookmarks',
           style: TextStyles.roboto20Color00,
         ),
         centerTitle: true,
@@ -32,14 +32,13 @@ class _SellerPostsScreenState extends State<SellerPostsScreen> {
           Padding(
             padding: const EdgeInsets.only(right: 5),
             child: IconButton(
-              icon: const Icon(Icons.add),
+              icon: const Icon(Icons.notifications_none_outlined),
               onPressed: () {},
             ),
           ),
         ],
       ),
-      body: 
-      GestureDetector(
+      body: GestureDetector(
         onTap: () {
          // _unfocusAll();
         },
@@ -49,18 +48,17 @@ class _SellerPostsScreenState extends State<SellerPostsScreen> {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                  builder: (context) => const SellerDashboardScreen()),
+                  builder: (context) => const BlogListScreen()),
             );
           } else if (details.primaryVelocity! < 0) {
             // Swiped Left
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => const  AgentdetailsSellerScreen()),
+              MaterialPageRoute(builder: (context) => const SellerSkillTestsScreen ()),
             );
           }
         },
-        child:
-        SafeArea(
+        child: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 9),
           child: Column(
@@ -109,10 +107,6 @@ class _SellerPostsScreenState extends State<SellerPostsScreen> {
                                     "Travel Accessories",
                                     style: TextStyles.roboto16,
                                   ),
-                                  Text(
-                                    '3 agents applied',
-                                    style: TextStyles.roboto12Color0D,
-                                  )
                                 ],
                               ),
                             ),
@@ -124,7 +118,7 @@ class _SellerPostsScreenState extends State<SellerPostsScreen> {
                         ),
                         const SizedBox(height: 16),
                         const Text(
-                          'Lorem ipsum dolor sit amet consectetur. Arcu praesent iaculis hendrerit augue amet mauris maecenas magnis at. Eget est mi egestas tellus. Vulputate adipiscing massa adipiscing at lorem dignissim in adipiscing. Gravida at nunc ornare in ullamcorper aliquam sem ornare.',
+                          'Ultimate Noise Cancelling Headphones for pure musical bass',
                           softWrap: true,
                         ),
                         const SizedBox(height: 16),
@@ -132,26 +126,19 @@ class _SellerPostsScreenState extends State<SellerPostsScreen> {
                           children: [
                             Icon(Icons.access_time_rounded),
                             SizedBox(width: 10),
-                            Text('Posted some time ago'),
+                            Text('18 Monday Sep 2023 5:00 AM'),
                           ],
                         ),
                         const SizedBox(height: 12),
                         const Row(
                           children: [
-                            Icon(Icons.location_on_outlined),
+                            Icon(
+                              Icons.bookmark,
+                              color: Color(0XFF74C52C),
+                            ),
                             SizedBox(width: 10),
                             Text(
                               'Location not provied yet',
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 12),
-                        const Row(
-                          children: [
-                            Icon(Icons.close),
-                            SizedBox(width: 10),
-                            Text(
-                              'Not updated yet',
                             ),
                           ],
                         ),
@@ -162,8 +149,8 @@ class _SellerPostsScreenState extends State<SellerPostsScreen> {
               ),
             ],
           ),
-              ),      ),
-    ),
-    );
+        ),
+      ),
+      ),  );
   }
 }

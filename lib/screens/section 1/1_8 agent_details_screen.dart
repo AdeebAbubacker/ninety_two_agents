@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/section%201/5_dashboard_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/7_profile_settings_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_5%20dashboard_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_10%20profile_settings_screen.dart';
 import 'package:ninetytwoagents/widgets/searchfield.dart';
 
 class AgentdetailsScreen extends StatefulWidget {

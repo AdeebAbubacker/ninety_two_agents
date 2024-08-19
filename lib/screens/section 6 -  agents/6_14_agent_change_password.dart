@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
 import 'package:ninetytwoagents/screens/section%202/2_1_agents_post_listing_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/8_security_settings_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_11%20security_settings_screen.dart';
 import 'package:ninetytwoagents/widgets/custom_textformfield.dart';
 
 class AgentsChangePasswordScreen extends StatefulWidget {

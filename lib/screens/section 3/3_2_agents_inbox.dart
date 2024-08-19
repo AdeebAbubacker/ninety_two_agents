@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
 import 'package:ninetytwoagents/screens/section%206%20-%20%20agents/6_1_dashboard_screen.dart';
 import 'package:ninetytwoagents/screens/section%203/3_1_skill_tests_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/14_seller_dashboard_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_1%20seller_dashboard_screen.dart';
 
 class AgentsInbox extends StatefulWidget {
   const AgentsInbox({super.key});

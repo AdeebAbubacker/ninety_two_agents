@@ -3,19 +3,17 @@
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
 import 'package:ninetytwoagents/screens/section%202/2_1_agents_post_listing_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/8_security_settings_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/18_seller_security_settings_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/20_seller_skill_tests_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_11%20security_settings_screen.dart';
 import 'package:ninetytwoagents/widgets/custom_textformfield.dart';
 
-class SellerChangePasswordScreen extends StatefulWidget {
-  const SellerChangePasswordScreen({super.key});
+class ChangePasswordScreen extends StatefulWidget {
+  const ChangePasswordScreen({super.key});
 
   @override
-  State<SellerChangePasswordScreen> createState() => _SellerChangePasswordScreenState();
+  State<ChangePasswordScreen> createState() => _ChangePasswordScreenState();
 }
 
-class _SellerChangePasswordScreenState extends State<SellerChangePasswordScreen> {
+class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
   final _detailsController = TextEditingController();
   final _postController = TextEditingController();
   final _notesController = TextEditingController();
@@ -52,14 +50,14 @@ class _SellerChangePasswordScreenState extends State<SellerChangePasswordScreen>
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => const SellerSecuritySettingsScreen()),
+                builder: (context) => const  SecuritySettingsScreen()),
           );
         } else if (details.primaryVelocity! < 0) {
           // Swiped Left
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => const  SellerSkillTestsScreen()),
+                builder: (context) => const  AgentsPostListingScreen()),
           );
         }
       },

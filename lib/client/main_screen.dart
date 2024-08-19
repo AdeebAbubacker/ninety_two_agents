@@ -4,23 +4,23 @@ import 'package:ninetytwoagents/screens/section%202/2_1_agents_post_listing_scre
 import 'package:ninetytwoagents/screens/section%202/2_2_agent_posting_screen.dart';
 import 'package:ninetytwoagents/screens/section%203/3_1_skill_tests_screen.dart';
 import 'package:ninetytwoagents/screens/section%203/3_2_agents_inbox.dart';
-import 'package:ninetytwoagents/screens/section%201/1_splash_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/2_signin_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/3_role_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/5_dashboard_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/6_agent_details_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/7_profile_settings_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/8_security_settings_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/9_change_password_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/14_seller_dashboard_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/15_seller_posts_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/16_agent_details_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/17_seller_profile_settings_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/18_seller_security_settings_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/19_seller_change_password_screen%20copy.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/20_seller_skill_tests_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/21_mybookmarks_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/23_sellers_inbox.dart';
+import 'package:ninetytwoagents/screens/section%201/1_1%20splash_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_2%20signin_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_3%20role_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_5%20dashboard_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_8%20agent_details_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_10%20profile_settings_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_11%20security_settings_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_13%20change_password_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_1%20seller_dashboard_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_2%20seller_posts_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_3%20agent_details_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_6%20seller_profile_settings_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_8%20seller_security_settings_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_9%20seller_change_password_screen%20copy.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_10%20seller_skill_tests_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_11%20mybookmarks_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_16%20sellers_inbox.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -34,7 +34,7 @@ class MainScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Column(

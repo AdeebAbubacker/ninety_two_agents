@@ -1,18 +1,16 @@
-// ignore_for_file: file_names
-
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/section%201/1_splash_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/22_blog_list_screen.dart';
+import 'package:ninetytwoagents/screens/section%203/3_2_agents_inbox.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_2%20seller_posts_screen.dart';
 
-class SellersInbox extends StatefulWidget {
-  const SellersInbox({super.key});
+class SellerDashboardScreen extends StatefulWidget {
+  const SellerDashboardScreen({super.key});
 
   @override
-  State<SellersInbox> createState() => _SellersInboxState();
+  State<SellerDashboardScreen> createState() => _SellerDashboardScreenState();
 }
 
-class _SellersInboxState extends State<SellersInbox> {
+class _SellerDashboardScreenState extends State<SellerDashboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +22,7 @@ class _SellersInboxState extends State<SellersInbox> {
           icon: const Icon(Icons.menu),
         ),
         title: Text(
-          'Inbox',
+          'Dashboard',
           style: TextStyles.roboto20Color00,
         ),
         centerTitle: true,
@@ -32,7 +30,7 @@ class _SellersInboxState extends State<SellersInbox> {
           Padding(
             padding: const EdgeInsets.only(right: 5),
             child: IconButton(
-              icon: const Icon(Icons.add),
+              icon: const Icon(Icons.notifications_none_outlined),
               onPressed: () {},
             ),
           ),
@@ -48,13 +46,13 @@ class _SellersInboxState extends State<SellersInbox> {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                  builder: (context) => const BlogListScreen()),
+                  builder: (context) => const AgentsInbox()),
             );
           } else if (details.primaryVelocity! < 0) {
             // Swiped Left
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => const  SplashScreen()),
+              MaterialPageRoute(builder: (context) => const  SellerPostsScreen()),
             );
           }
         },
@@ -63,7 +61,7 @@ class _SellersInboxState extends State<SellersInbox> {
           physics: const BouncingScrollPhysics(),
           child: Column(
             children: [
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ListView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
@@ -71,30 +69,40 @@ class _SellersInboxState extends State<SellersInbox> {
                 itemBuilder: (context, index) {
                   return SizedBox(
                     width: double.infinity,
-                    height: 90,
+                    height: 110,
                     child: Column(
                       children: [
-                        Row(
+                        const Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            const SizedBox(width: 20),
-                            const CircleAvatar(
+                            SizedBox(width: 20),
+                            CircleAvatar(
                               radius: 30,
                             ),
-                            const SizedBox(width: 20),
-                            const Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                              
-                                Text('User Name'),
-                                Text('Lorum Ipsum')
-                              ],
+                            SizedBox(width: 20),
+                            Expanded(
+                              child: Wrap(
+                                spacing: 8,
+                                runSpacing: 4,
+                                children: [
+                                  Text(
+                                    'You selected Agent (Agent Name) for  post (Post Name)',
+                                    style: TextStyle(fontSize: 14),
+                                    softWrap: true,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.access_time_rounded),
+                                      SizedBox(width: 6),
+                                      Text(
+                                        '22 Dec 5:00 AM',
+                                        style: TextStyle(fontSize: 14),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ),
-                            const Spacer(),
-                            IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.more_vert_rounded)),
-                            const SizedBox(width: 10),
                           ],
                         ),
                         const SizedBox(height: 15),
@@ -102,7 +110,7 @@ class _SellersInboxState extends State<SellersInbox> {
                           width: MediaQuery.of(context).size.width,
                           height: 1,
                           color: const Color.fromARGB(255, 215, 215, 215),
-                        )
+                        ),
                       ],
                     ),
                   );
@@ -112,6 +120,6 @@ class _SellersInboxState extends State<SellersInbox> {
           ),
         ),
       ),
-      ),  );
+    ),);
   }
 }

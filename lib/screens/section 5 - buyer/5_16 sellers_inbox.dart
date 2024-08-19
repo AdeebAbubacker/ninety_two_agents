@@ -1,16 +1,18 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/section%203/3_2_agents_inbox.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/15_seller_posts_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_1%20splash_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_12%20blog_list_screen.dart';
 
-class SellerDashboardScreen extends StatefulWidget {
-  const SellerDashboardScreen({super.key});
+class SellersInbox extends StatefulWidget {
+  const SellersInbox({super.key});
 
   @override
-  State<SellerDashboardScreen> createState() => _SellerDashboardScreenState();
+  State<SellersInbox> createState() => _SellersInboxState();
 }
 
-class _SellerDashboardScreenState extends State<SellerDashboardScreen> {
+class _SellersInboxState extends State<SellersInbox> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +24,7 @@ class _SellerDashboardScreenState extends State<SellerDashboardScreen> {
           icon: const Icon(Icons.menu),
         ),
         title: Text(
-          'Dashboard',
+          'Inbox',
           style: TextStyles.roboto20Color00,
         ),
         centerTitle: true,
@@ -30,7 +32,7 @@ class _SellerDashboardScreenState extends State<SellerDashboardScreen> {
           Padding(
             padding: const EdgeInsets.only(right: 5),
             child: IconButton(
-              icon: const Icon(Icons.notifications_none_outlined),
+              icon: const Icon(Icons.add),
               onPressed: () {},
             ),
           ),
@@ -46,13 +48,13 @@ class _SellerDashboardScreenState extends State<SellerDashboardScreen> {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                  builder: (context) => const AgentsInbox()),
+                  builder: (context) => const BlogListScreen()),
             );
           } else if (details.primaryVelocity! < 0) {
             // Swiped Left
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => const  SellerPostsScreen()),
+              MaterialPageRoute(builder: (context) => const  SplashScreen()),
             );
           }
         },
@@ -61,7 +63,7 @@ class _SellerDashboardScreenState extends State<SellerDashboardScreen> {
           physics: const BouncingScrollPhysics(),
           child: Column(
             children: [
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               ListView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
@@ -69,40 +71,30 @@ class _SellerDashboardScreenState extends State<SellerDashboardScreen> {
                 itemBuilder: (context, index) {
                   return SizedBox(
                     width: double.infinity,
-                    height: 110,
+                    height: 90,
                     child: Column(
                       children: [
-                        const Row(
+                        Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            SizedBox(width: 20),
-                            CircleAvatar(
+                            const SizedBox(width: 20),
+                            const CircleAvatar(
                               radius: 30,
                             ),
-                            SizedBox(width: 20),
-                            Expanded(
-                              child: Wrap(
-                                spacing: 8,
-                                runSpacing: 4,
-                                children: [
-                                  Text(
-                                    'You selected Agent (Agent Name) for  post (Post Name)',
-                                    style: TextStyle(fontSize: 14),
-                                    softWrap: true,
-                                  ),
-                                  Row(
-                                    children: [
-                                      Icon(Icons.access_time_rounded),
-                                      SizedBox(width: 6),
-                                      Text(
-                                        '22 Dec 5:00 AM',
-                                        style: TextStyle(fontSize: 14),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
+                            const SizedBox(width: 20),
+                            const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                              
+                                Text('User Name'),
+                                Text('Lorum Ipsum')
+                              ],
                             ),
+                            const Spacer(),
+                            IconButton(
+                                onPressed: () {},
+                                icon: const Icon(Icons.more_vert_rounded)),
+                            const SizedBox(width: 10),
                           ],
                         ),
                         const SizedBox(height: 15),
@@ -110,7 +102,7 @@ class _SellerDashboardScreenState extends State<SellerDashboardScreen> {
                           width: MediaQuery.of(context).size.width,
                           height: 1,
                           color: const Color.fromARGB(255, 215, 215, 215),
-                        ),
+                        )
                       ],
                     ),
                   );
@@ -120,6 +112,6 @@ class _SellerDashboardScreenState extends State<SellerDashboardScreen> {
           ),
         ),
       ),
-    ),);
+      ),  );
   }
 }

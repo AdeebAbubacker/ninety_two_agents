@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/screens/section%202/2_2_agent_posting_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/2_signin_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_2%20signin_screen.dart';
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 

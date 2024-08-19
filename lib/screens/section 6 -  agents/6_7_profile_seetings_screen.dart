@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/section%201/6_agent_details_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/8_security_settings_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_8%20agent_details_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_11%20security_settings_screen.dart';
 import 'package:ninetytwoagents/widgets/custom_textformfield.dart';
 import 'package:ninetytwoagents/widgets/profile_circle.dart';
 

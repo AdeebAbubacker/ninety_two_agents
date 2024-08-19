@@ -2,10 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/section%201/5_dashboard_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/7_profile_settings_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/15_seller_posts_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/17_seller_profile_settings_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_5%20dashboard_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_10%20profile_settings_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_2%20seller_posts_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_6%20seller_profile_settings_screen.dart';
 import 'package:ninetytwoagents/widgets/searchfield.dart';
 
 class AgentdetailsSellerScreen extends StatefulWidget {

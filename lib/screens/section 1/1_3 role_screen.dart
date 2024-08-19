@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ninetytwoagents/screens/section%201/2_signin_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/4_signup_as_buyer.dart';
-import 'package:ninetytwoagents/screens/section%201/5_dashboard_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_2%20signin_screen.dart';
+import 'package:ninetytwoagents/screens/section%201/1_4%20signup_as_buyer.dart';
+import 'package:ninetytwoagents/screens/section%201/1_5%20dashboard_screen.dart';
 class SignUpRolePage extends StatefulWidget {
   const SignUpRolePage({super.key});
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/21_mybookmarks_screen.dart';
-import 'package:ninetytwoagents/screens/section%204%20-%20seller/23_sellers_inbox.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_11%20mybookmarks_screen.dart';
+import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_16%20sellers_inbox.dart';
 
 class BlogListScreen extends StatefulWidget {
   const BlogListScreen({super.key});
