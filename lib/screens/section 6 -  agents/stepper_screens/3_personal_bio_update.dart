@@ -23,13 +23,13 @@ class PersonalBioUpdateScreen3 extends StatelessWidget {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CustomStepper(),
+              const CustomStepper(),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -37,49 +37,49 @@ class PersonalBioUpdateScreen3 extends StatelessWidget {
                       'Sales History',
                       style: TextStyles.roboto14ColorBlackgrey,
                     ),
-                    SizedBox(height: 28),
+                    const SizedBox(height: 28),
                     CustomTextFormField(
                       textController: TextEditingController(),
                       labelText: 'Years',
                       focusNode: FocusNode(),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     CustomTextFormField(
                       textController: TextEditingController(),
                       labelText: 'Sellers Represented',
                       focusNode: FocusNode(),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     CustomTextFormField(
                       textController: TextEditingController(),
                       labelText: 'Buyers Represented',
                       focusNode: FocusNode(),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     CustomTextFormField(
                       textController: TextEditingController(),
                       labelText: 'Total Dollar Sales',
                       focusNode: FocusNode(),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     CustomTextFormField(
                       textController: TextEditingController(),
                       labelText: 'Assosiations and Awards',
                       focusNode: FocusNode(),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     CustomTextFormField(
                       textController: TextEditingController(),
                       labelText: 'Publications',
                       focusNode: FocusNode(),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     CustomTextFormField(
                       textController: TextEditingController(),
                       labelText: 'Community Involvement',
                       focusNode: FocusNode(),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     SizedBox(
                       width: double.infinity,
                       height: 48,
@@ -94,7 +94,7 @@ class PersonalBioUpdateScreen3 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 44),
+                    const SizedBox(height: 44),
                   ],
                 ),
               )

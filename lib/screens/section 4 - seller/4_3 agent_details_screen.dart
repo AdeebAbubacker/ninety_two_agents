@@ -2,8 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/section%201/1_5%20dashboard_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/1_10%20profile_settings_screen.dart';
 import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_2%20seller_posts_screen.dart';
 import 'package:ninetytwoagents/screens/section%204%20-%20seller/4_6%20seller_profile_settings_screen.dart';
 import 'package:ninetytwoagents/widgets/searchfield.dart';
@@ -79,11 +77,11 @@ class _AgentdetailsSellerScreenState extends State<AgentdetailsSellerScreen> {
         },
         child: SafeArea(
           child: SingleChildScrollView(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             child: Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: SearchField(
                     searchController: TextEditingController(),
                     focusNode: FocusNode(),

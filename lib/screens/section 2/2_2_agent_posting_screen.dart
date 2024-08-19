@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
 import 'package:ninetytwoagents/screens/section%203/3_1_skill_tests_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/1_1%20splash_screen.dart';
 import 'package:ninetytwoagents/screens/section%202/2_1_agents_post_listing_screen.dart';
 
 class AgentPostingScreen extends StatefulWidget {

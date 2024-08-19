@@ -41,8 +41,8 @@ class _AgentDashboardScreenState extends State<AgentDashboardScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 20),
-              Padding(
-                padding: const EdgeInsets.only(left: 20),
+              const Padding(
+                padding: EdgeInsets.only(left: 20),
                 child: Text('List of Selected Posts'),
               ),
               const SizedBox(height: 20),

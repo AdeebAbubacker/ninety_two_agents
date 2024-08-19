@@ -25,6 +25,8 @@ dependencies:
   desktop_drop: ^0.4.4
   image_cropper: ^8.0.2
 
+  path: any
+  path_provider: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

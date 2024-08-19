@@ -23,13 +23,13 @@ class PersonalBioUpdateScreen2 extends StatelessWidget {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CustomStepper(),
+              const CustomStepper(),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -37,31 +37,31 @@ class PersonalBioUpdateScreen2 extends StatelessWidget {
                       'Industry Experience',
                       style: TextStyles.roboto14ColorBlackgrey,
                     ),
-                    SizedBox(height: 28),
+                    const SizedBox(height: 28),
                     CustomTextFormField(
                       textController: TextEditingController(),
                       labelText: 'Title',
                       focusNode: FocusNode(),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     CustomTextFormField(
                       textController: TextEditingController(),
                       labelText: 'Company',
                       focusNode: FocusNode(),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     CustomTextFormField(
                       textController: TextEditingController(),
                       labelText: 'Select from Date',
                       focusNode: FocusNode(),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     CustomTextFormField(
                       textController: TextEditingController(),
                       labelText: 'Select to Date',
                       focusNode: FocusNode(),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     TextField(
                       focusNode: FocusNode(),
                       decoration: InputDecoration(
@@ -81,7 +81,7 @@ class PersonalBioUpdateScreen2 extends StatelessWidget {
                       controller: TextEditingController(),
                       maxLines: 7,
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                     SizedBox(
                       width: double.infinity,
                       height: 48,
@@ -96,7 +96,7 @@ class PersonalBioUpdateScreen2 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 24),
+                    const SizedBox(height: 24),
                   ],
                 ),
               )

@@ -63,7 +63,7 @@ class _SellersInboxState extends State<SellersInbox> {
           physics: const BouncingScrollPhysics(),
           child: Column(
             children: [
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ListView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,

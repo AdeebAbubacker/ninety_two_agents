@@ -79,7 +79,7 @@ class _AgentsConnectedjobScreenState extends State<AgentsConnectedjobScreen> {
                   const Text('Buyer'),
                 ],
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Card(
                 color: Colors.white,
                 child: Container(

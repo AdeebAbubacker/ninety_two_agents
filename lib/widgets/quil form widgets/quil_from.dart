@@ -15,7 +15,7 @@ class _QuilFromState extends State<QuilFrom> {
   final _controller = QuillController.basic();
   final _editorFocusNode = FocusNode();
   final _editorScrollController = ScrollController();
-  var _isReadOnly = false;
+  final _isReadOnly = false;
   int _lineCount = 0;
 
   @override

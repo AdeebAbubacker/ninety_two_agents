@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:image_cropper/image_cropper.dart';
 import 'package:path_provider/path_provider.dart'
@@ -86,7 +85,7 @@ class MyQuillToolbar extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         child: Wrap(
           children: [
-            SizedBox(width: 40),
+            const SizedBox(width: 40),
             QuillToolbarSelectHeaderStyleDropdownButton(
               controller: controller,
             ),

@@ -191,7 +191,7 @@ class CustomTextFormField extends StatelessWidget {
   final TextEditingController textController;
   final FocusNode focusNode;
   final String labelText;
-  CustomTextFormField({
+  const CustomTextFormField({
     super.key,
     required this.textController,
     required this.focusNode,

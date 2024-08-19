@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
-import 'package:ninetytwoagents/screens/section%201/1_4%20signup_as_buyer.dart';
 
 class DownloadUnpaidInvoice extends StatefulWidget {
   const DownloadUnpaidInvoice({super.key});
@@ -40,7 +39,7 @@ class _DownloadUnpaidInvoiceState extends State<DownloadUnpaidInvoice> {
                     'assets/unpaid_invoice.png',
                     fit: BoxFit.contain,
                   )),
-              Spacer(),
+              const Spacer(),
               SizedBox(
                 width: double.infinity,
                 height: 48,

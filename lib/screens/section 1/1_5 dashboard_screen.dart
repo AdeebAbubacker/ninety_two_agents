@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:ninetytwoagents/core/const/text_style/text_styles.dart';
 import 'package:ninetytwoagents/screens/section%201/1_3%20role_screen.dart';
-import 'package:ninetytwoagents/screens/section%201/1_4%20signup_as_buyer.dart';
 import 'package:ninetytwoagents/screens/section%201/1_8%20agent_details_screen.dart';
 import 'package:ninetytwoagents/widgets/drawer_button.dart';
 

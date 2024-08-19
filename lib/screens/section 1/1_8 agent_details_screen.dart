@@ -77,11 +77,11 @@ class _AgentdetailsScreenState extends State<AgentdetailsScreen> {
         },
         child: SafeArea(
           child: SingleChildScrollView(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             child: Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: SearchField(
                     searchController: TextEditingController(),
                     focusNode: FocusNode(),

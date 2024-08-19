@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ninetytwoagents/client/main_screen.dart';
 import 'package:ninetytwoagents/screens/section%201/1_4%20signup_as_buyer.dart';
 
 //-----------------------------------------
